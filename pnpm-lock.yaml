@@ -6,7 +6,9 @@ settings:
 
 importers:
 
-  .:
+  .: {}
+
+  backend:
     dependencies:
       '@nestjs/common':
         specifier: ^10.4.0
@@ -20,6 +22,9 @@ importers:
       dotenv:
         specifier: ^16.4.5
         version: 16.6.1
+      express:
+        specifier: ^4.21.0
+        version: 4.22.1
       neo4j-driver:
         specifier: ^5.24.0
         version: 5.28.3
