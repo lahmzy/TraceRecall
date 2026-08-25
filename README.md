@@ -18,9 +18,9 @@ The application presents these graph relationships through a simple operations d
 
 ## Demo
 
-**Live Demo:** _Add hosted application URL_
+**Live Demo:**  https://trace-recall-frontend.vercel.app
 
-**Screen Recording:** _Add screen recording URL_
+**Screen Recording:** https://www.loom.com/share/bce4620ae8294b8fb3358f6ee3db1d73
 
 ---
 
