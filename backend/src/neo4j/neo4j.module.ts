@@ -13,9 +13,17 @@ import { Neo4jService } from './neo4j.service';
         const driver = neo4j.driver(
           requireEnv('NEO4J_URI'),
           neo4j.auth.basic(requireEnv('NEO4J_USERNAME'), requireEnv('NEO4J_PASSWORD')),
+          {
+            maxConnectionPoolSize: 10,
+            connectionAcquisitionTimeout: 10000,
+          },
         );
 
-        await driver.verifyConnectivity();
+        try {
+          await driver.verifyConnectivity();
+        } catch (error) {
+          console.warn('Neo4j initial connectivity check warning:', error);
+        }
         return driver;
       },
     },

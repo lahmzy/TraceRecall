@@ -5,6 +5,15 @@ import { GraphService } from './graph.service';
 export class GraphController {
   constructor(private readonly graph: GraphService) {}
 
+  @Get()
+  root() {
+    return {
+      status: 'ok',
+      service: 'RecallTrace API',
+      endpoints: ['/health', '/recalls', '/graph/summary'],
+    };
+  }
+
   @Get('health')
   health() {
     return this.graph.health();
