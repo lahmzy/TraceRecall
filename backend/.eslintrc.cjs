@@ -8,6 +8,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
   root: true,
+  ignorePatterns: ['frontend/**/*', 'dist/**/*', '.eslintrc.cjs'],
   env: {
     node: true,
     jest: true,
