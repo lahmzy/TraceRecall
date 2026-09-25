@@ -1,5 +1,7 @@
 # RecallTrace
 
+![RecallTrace](./docs/recalltrace-card.png)
+
 > A graph-powered product recall impact explorer built with CognoDB, NestJS, Next.js, and TypeScript.
 
 RecallTrace helps product safety and operations teams understand the downstream impact of a product recall.
